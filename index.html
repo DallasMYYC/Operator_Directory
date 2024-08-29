@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Services Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Airline Services Search</h1>
+
+    <div class="container">
+        <!-- Search Panel -->
+        <div class="search-panel">
+            <h2>Search By:</h2>
+            <label for="airline">Airline</label>
+            <select id="airline">
+                <option value="">Select Airline</option>
+                <!-- Options will be populated by JavaScript -->
+            </select>
+
+            <label for="service">Service</label>
+            <select id="service">
+                <option value="">Select Service</option>
+                <!-- Options will be populated by JavaScript -->
+            </select>
+
+            <label for="provider">Provider</label>
+            <select id="provider">
+                <option value="">Select Provider</option>
+                <!-- Options will be populated by JavaScript -->
+            </select>
+
+            <button id="searchBtn">Search</button>
+            <button id="resetBtn">Reset Search</button>
+        </div>
+
+        <!-- Results Panel -->
+        <div class="results-panel">
+            <h2>Results:</h2>
+            <div id="results">
+                <!-- Search results will be displayed here -->
+            </div>
+            <div id="contactInfo" class="contact-info">
+                <!-- Contact information will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
